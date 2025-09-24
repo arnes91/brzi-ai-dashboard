@@ -1,0 +1,177 @@
+source,path,size,hash,path_in_zip
+uploaded_pdf,/mnt/data/BRZI_AI_DASHBOARD/data/knowledge/startup_technical_guide_ai_agents_final.pdf,26609417,6d233d5ad1d62f79f87e97d97e77cc62,
+brzi_ai_framework.zip,,1389,,README.md
+brzi_ai_framework.zip,,634,,prompts/memory_items.md
+brzi_ai_framework.zip,,1543,,prompts/drive_management_unification.md
+brzi_ai_framework.zip,,1407,,prompts/content_pipeline_youtube.md
+brzi_ai_framework.zip,,1856,,prompts/custom_instructions.md
+brzi_ai_framework.zip,,2391,,prompts/base_context.md
+brzi_ai_framework.zip,,1446,,prompts/monetization_outreach.md
+brzi_ai_framework.zip,,1279,,prompts/deep_research_sprint.md
+brzi_ai_framework.zip,,1529,,prompts/music_agent_track_release.md
+brzi_ai_framework.zip,,1380,,prompts/rapid_saas_experiment.md
+brzi_ai_framework.zip,,1538,,prompts/automation_agents.md
+brzi_ai_framework.zip,,1389,,prompts/data_spreadsheet_assistant.md
+brzi_ai_framework.zip,,1159,,prompts/README.md
+brzi_ai_framework.zip,,5734,,docs/AGENTS.md
+brzi_ai_framework.zip,,2643,,docs/PROJECTS.md
+brzi_ai_framework.zip,,2419,,docs/CROSS_CONTEXT.md
+brzi_ai_framework.zip,,1677,,docs/WORKFLOWS_OVERVIEW.md
+brzi_ai_framework.zip,,5328,,docs/GUIDEBOOK.md
+brzi_ai_framework.zip,,3334,,docs/TOOLS.md
+brzi_ai_framework.zip,,3867,,docs/ENVIRONMENT_SETUP.md
+brzi_ai_framework.zip,,1305,,docs/README.md
+brzi_ai_framework.zip,,1958,,docs/PROMPT_PACKS_OVERVIEW.md
+brzi_ai_framework.zip,,653,,logs/log_template.md
+brzi_ai_framework.zip,,1406,,logs/README.md
+brzi_ai_framework.zip,,1277,,templates/automation_mapping_template.md
+brzi_ai_framework.zip,,1446,,templates/drive_structure_template.md
+brzi_ai_framework.zip,,1040,,templates/cross_context_log_template.md
+brzi_ai_framework.zip,,741,,templates/music_prompt_template.md
+brzi_ai_framework.zip,,1271,,templates/youtube_video_plan_template.md
+brzi_ai_framework.zip,,894,,templates/outreach_script_template.md
+brzi_ai_framework.zip,,1043,,templates/saas_onepager_template.md
+brzi_ai_framework.zip,,1061,,templates/data_assistant_template.md
+brzi_ai_framework.zip,,1025,,templates/README.md
+brzi_ai_framework.zip,,1164,,templates/music_release_template.md
+brzi_ai_framework.zip,,583,,workflows/README.md
+brzi_ai_framework.zip,,2297,,workflows/content_pipeline_youtube/README.md
+brzi_ai_framework.zip,,2407,,workflows/music_agent_track_release/README.md
+brzi_ai_framework.zip,,2048,,workflows/rapid_saas_experiment/README.md
+brzi_ai_framework.zip,,2077,,workflows/drive_management_unification/README.md
+brzi_ai_framework.zip,,2002,,workflows/automation_agents/README.md
+brzi_ai_framework.zip,,1917,,workflows/data_spreadsheet_assistant/README.md
+brzi_ai_framework.zip,,2226,,workflows/deep_research_sprint/README.md
+brzi_ai_framework.zip,,2329,,workflows/monetization_outreach/README.md
+brzi_ai_framework.zip,,2416,,main_context/global_context.md
+brzi_ai_framework.zip,,687,,main_context/README.md
+brzi_ai_framework.zip,,1252,,agents/copilot.md
+brzi_ai_framework.zip,,1183,,agents/producer_suno.md
+brzi_ai_framework.zip,,896,,agents/rabbit_os.md
+brzi_ai_framework.zip,,1105,,agents/claude.md
+brzi_ai_framework.zip,,1302,,agents/gemini.md
+brzi_ai_framework.zip,,1139,,agents/manus.md
+brzi_ai_framework.zip,,1159,,agents/chatgpt.md
+brzi_ai_framework.zip,,790,,agents/README.md
+brzi_ai_framework.zip,,939,,agents/perplexity.md
+Brzi_NotebookLM_Pack_v1.zip,,1897,,00_README.md
+Brzi_NotebookLM_Pack_v1.zip,,3223,,01_Identity_BrziArzi_Overview_Script.md
+Brzi_NotebookLM_Pack_v1.zip,,1222,,02_YouTube_Podcast_Script_Generator.md
+Brzi_NotebookLM_Pack_v1.zip,,550,,03_Audio_Teaser_Prompt.md
+Brzi_NotebookLM_Pack_v1.zip,,601,,04_Critical_Review_EliPrime.md
+Brzi_NotebookLM_Pack_v1.zip,,1230,,05_Video_Overview_Template_BHS.md
+Brzi_NotebookLM_Pack_v1.zip,,940,,06_Audio_Overview_Template_BHS.md
+Brzi_NotebookLM_Pack_v1.zip,,2576,,07_Veo3_Clip_Prompts.md
+Brzi_NotebookLM_Pack_v1.zip,,1200,,08_Genie3_Master_Prompt.md
+Brzi_NotebookLM_Pack_v1.zip,,1187,,09_Personas_Ari_and_Grok.md
+Brzi_NotebookLM_Pack_v1.zip,,1709,,10_Research_Prompt_HandsFree_Windows.md
+Brzi_NotebookLM_Pack_v1.zip,,892,,11_Titles_Thumbnails_Broll_Overlays.md
+Brzi_NotebookLM_Pack_v1.zip,,950,,12_Logging_and_CrossAgent_Context.md
+Balkan_AI_Community_Hub_Updated.zip,,4408,,balkan_ai_community_hub_updated/context/power_scanner_blueprint.md
+Balkan_AI_Community_Hub_Updated.zip,,279,,balkan_ai_community_hub_updated/workflows/agent_publish_pipeline.yaml
+Balkan_AI_Community_Hub_Updated.zip,,283,,balkan_ai_community_hub_updated/workflows/ai_promo_to_paid_funnel.yaml
+Balkan_AI_Community_Hub_Updated.zip,,979,,balkan_ai_community_hub_updated/workflows/content_generation_pipeline.yaml
+Balkan_AI_Community_Hub_Updated.zip,,1186,,balkan_ai_community_hub_updated/templates/METADATA_KIT_TEMPLATE.json
+Balkan_AI_Community_Hub_Updated.zip,,410,,balkan_ai_community_hub_updated/templates/VIDEO_SCRIPT_TEMPLATE.md
+Balkan_AI_Community_Hub_Updated.zip,,528,,balkan_ai_community_hub_updated/templates/NOTEBOOKLM_RESEARCH_PROMPT_TEMPLATE.md
+Balkan_AI_Community_Hub_Updated.zip,,191,,balkan_ai_community_hub_updated/templates/COMMUNITY_POST_IDEAS.md
+Balkan_AI_Community_Hub_Updated.zip,,214,,balkan_ai_community_hub_updated/templates/THUMBNAIL_STYLES.md
+Balkan_AI_Community_Hub_Updated.zip,,250,,balkan_ai_community_hub_updated/prompts/NOTEBOOKLM_MASTER.md
+Balkan_AI_Community_Hub_Updated.zip,,695,,balkan_ai_community_hub_updated/prompts/power_scanner_prompts.md
+Balkan_AI_Community_Hub_Updated.zip,,571,,balkan_ai_community_hub_updated/prompts/best_prompts.json
+Balkan_AI_Community_Hub_Updated.zip,,263,,balkan_ai_community_hub_updated/checklists/PRODUCTION_CHECKLIST.md
+Balkan_AI_Community_Hub_Updated.zip,,219,,balkan_ai_community_hub_updated/checklists/QA_CHECKLIST.md
+Balkan_AI_Community_Hub_Updated.zip,,97,,balkan_ai_community_hub_updated/docs/SCHEDULING.md
+Balkan_AI_Community_Hub_Updated.zip,,223,,balkan_ai_community_hub_updated/docs/ASSETS_PLACEHOLDERS.txt
+Balkan_AI_Community_Hub_Updated.zip,,155,,balkan_ai_community_hub_updated/docs/SERIES_IDEAS.md
+Balkan_AI_Community_Hub_Updated.zip,,262,,balkan_ai_community_hub_updated/docs/OPEN_TASKS.md
+Balkan_AI_Community_Hub_Updated.zip,,133,,balkan_ai_community_hub_updated/docs/KPIS.md
+Balkan_AI_Community_Hub_Updated.zip,,210,,balkan_ai_community_hub_updated/docs/LEGAL_ETHICS.md
+Templates&Failed-Attempts.zip,,122,,ai-storybook-creator/vercel.json
+Templates&Failed-Attempts.zip,,595,,ai-storybook-creator/tsconfig.json
+Templates&Failed-Attempts.zip,,92,,ai-storybook-creator/pnpm-lock.yaml
+Templates&Failed-Attempts.zip,,2373,,ai-storybook-creator/package.json
+Templates&Failed-Attempts.zip,,443,,ai-storybook-creator/components.json
+Templates&Failed-Attempts.zip,,595,,audio-analysis-platform/tsconfig.json
+Templates&Failed-Attempts.zip,,92,,audio-analysis-platform/pnpm-lock.yaml
+Templates&Failed-Attempts.zip,,2187,,audio-analysis-platform/package.json
+Templates&Failed-Attempts.zip,,443,,audio-analysis-platform/components.json
+Templates&Failed-Attempts.zip,,595,,music-production-site/tsconfig.json
+Templates&Failed-Attempts.zip,,92,,music-production-site/pnpm-lock.yaml
+Templates&Failed-Attempts.zip,,2187,,music-production-site/package.json
+Templates&Failed-Attempts.zip,,443,,music-production-site/components.json
+Templates&Failed-Attempts.zip,,595,,op1-synth/tsconfig.json
+Templates&Failed-Attempts.zip,,92,,op1-synth/pnpm-lock.yaml
+Templates&Failed-Attempts.zip,,2209,,op1-synth/package.json
+Templates&Failed-Attempts.zip,,443,,op1-synth/components.json
+Templates&Failed-Attempts.zip,,612,,dbz-power-scanner (1)/package.json
+Templates&Failed-Attempts.zip,,311,,balkan_ai_chatbot_restructured/.eslintrc.json
+Templates&Failed-Attempts.zip,,311,,Fast-AI Manus/Balkan AI Chatbot MVP_ Modular Meme-Powered App/.eslintrc.json
+Templates&Failed-Attempts.zip,,1263,,balkanaichatbotrestructured (4)/.github/workflows/ci.yml
+Templates&Failed-Attempts.zip,,311,,Manus/balkan-ai-chatbot/balkan-ai-chatbot/.eslintrc.json
+Templates&Failed-Attempts.zip,,4679,,Manus/balkan-ai-chatbot/balkan-ai-chatbot/.next/app-build-manifest.json
+Templates&Failed-Attempts.zip,,438,,Manus/balkan-ai-chatbot/balkan-ai-chatbot/.next/app-path-routes-manifest.json
+Templates&Failed-Attempts.zip,,995,,Manus/balkan-ai-chatbot/balkan-ai-chatbot/.next/build-manifest.json
+Templates&Failed-Attempts.zip,,185,,Manus/balkan-ai-chatbot/balkan-ai-chatbot/.next/cache/config.json
+Templates&Failed-Attempts.zip,,311,,Manus/balkan-ai-chatbot/balkan-ai-chatbot/Balkan AI Chatbot MVP_ Modular Meme-Powered App/.eslintrc.json
+Templates&Failed-Attempts.zip,,504,,Arzi_NeuroArchitect_GPT/README.txt
+Templates&Failed-Attempts.zip,,2813,,Arzi_NeuroArchitect_GPT/Arzi_NeuroArchitect.json
+Templates&Failed-Attempts.zip,,595,,chat-management-dashboard/tsconfig.json
+Templates&Failed-Attempts.zip,,92,,chat-management-dashboard/pnpm-lock.yaml
+Templates&Failed-Attempts.zip,,2221,,chat-management-dashboard/package.json
+Templates&Failed-Attempts.zip,,443,,chat-management-dashboard/components.json
+Templates&Failed-Attempts.zip,,595,,wave-music-player/tsconfig.json
+Templates&Failed-Attempts.zip,,92,,wave-music-player/pnpm-lock.yaml
+Templates&Failed-Attempts.zip,,2187,,wave-music-player/package.json
+Templates&Failed-Attempts.zip,,443,,wave-music-player/components.json
+Templates&Failed-Attempts.zip,,4377,,project_files/viral-video-prompt-templates.md
+Templates&Failed-Attempts.zip,,3423,,project_files/viral-music-prompt-templates.md
+Templates&Failed-Attempts.zip,,4116,,project_files/proven-viral-examples.md
+Templates&Failed-Attempts.zip,,24807,,project_files/Ultimate Knowledge Base.txt
+Templates&Failed-Attempts.zip,,3423,,project_files/viral-content-formula.md
+Templates&Failed-Attempts.zip,,4556,,project_files/viral-content-optimization-guide.md
+Templates&Failed-Attempts.zip,,595,,01-pwr-scn-ai/dbzpowerscannerv18 (1)/tsconfig.json
+Templates&Failed-Attempts.zip,,92,,01-pwr-scn-ai/dbzpowerscannerv18 (1)/pnpm-lock.yaml
+Templates&Failed-Attempts.zip,,2355,,01-pwr-scn-ai/dbzpowerscannerv18 (1)/package.json
+Templates&Failed-Attempts.zip,,443,,01-pwr-scn-ai/dbzpowerscannerv18 (1)/components.json
+Templates&Failed-Attempts.zip,,595,,01-pwr-scn-ai/FIX-1/dbzpowerscanner_v18_FIXED_READY (1)/tsconfig.json
+Templates&Failed-Attempts.zip,,92,,01-pwr-scn-ai/FIX-1/dbzpowerscanner_v18_FIXED_READY (1)/pnpm-lock.yaml
+Templates&Failed-Attempts.zip,,2355,,01-pwr-scn-ai/FIX-1/dbzpowerscanner_v18_FIXED_READY (1)/package.json
+Templates&Failed-Attempts.zip,,443,,01-pwr-scn-ai/FIX-1/dbzpowerscanner_v18_FIXED_READY (1)/components.json
+Templates&Failed-Attempts.zip,,595,,Neural-Agents-Hub/ai-agent-dashboard (1)/tsconfig.json
+Templates&Failed-Attempts.zip,,92,,Neural-Agents-Hub/ai-agent-dashboard (1)/pnpm-lock.yaml
+Templates&Failed-Attempts.zip,,2187,,Neural-Agents-Hub/ai-agent-dashboard (1)/package.json
+Templates&Failed-Attempts.zip,,443,,Neural-Agents-Hub/ai-agent-dashboard (1)/components.json
+Templates&Failed-Attempts.zip,,595,,analyze-combine/analyze&combine/wave-music-player/tsconfig.json
+Templates&Failed-Attempts.zip,,92,,analyze-combine/analyze&combine/wave-music-player/pnpm-lock.yaml
+Templates&Failed-Attempts.zip,,2187,,analyze-combine/analyze&combine/wave-music-player/package.json
+Templates&Failed-Attempts.zip,,443,,analyze-combine/analyze&combine/wave-music-player/components.json
+Templates&Failed-Attempts.zip,,595,,analyze-combine/analyze&combine/op1-synth/tsconfig.json
+Templates&Failed-Attempts.zip,,92,,analyze-combine/analyze&combine/op1-synth/pnpm-lock.yaml
+Templates&Failed-Attempts.zip,,2209,,analyze-combine/analyze&combine/op1-synth/package.json
+Templates&Failed-Attempts.zip,,443,,analyze-combine/analyze&combine/op1-synth/components.json
+Templates&Failed-Attempts.zip,,595,,analyze-combine/analyze&combine/music-production-site/tsconfig.json
+Templates&Failed-Attempts.zip,,92,,analyze-combine/analyze&combine/music-production-site/pnpm-lock.yaml
+Templates&Failed-Attempts.zip,,2187,,analyze-combine/analyze&combine/music-production-site/package.json
+Templates&Failed-Attempts.zip,,443,,analyze-combine/analyze&combine/music-production-site/components.json
+Templates&Failed-Attempts.zip,,1263,,analyze-combine/analyze&combine/balkanaichatbotrestructured (4)/.github/workflows/ci.yml
+Templates&Failed-Attempts.zip,,595,,analyze-combine/analyze&combine/audio-analysis-platform/tsconfig.json
+Templates&Failed-Attempts.zip,,92,,analyze-combine/analyze&combine/audio-analysis-platform/pnpm-lock.yaml
+Templates&Failed-Attempts.zip,,2187,,analyze-combine/analyze&combine/audio-analysis-platform/package.json
+Templates&Failed-Attempts.zip,,443,,analyze-combine/analyze&combine/audio-analysis-platform/components.json
+Templates&Failed-Attempts.zip,,122,,analyze-combine/analyze&combine/ai-storybook-creator/vercel.json
+Templates&Failed-Attempts.zip,,595,,analyze-combine/analyze&combine/ai-storybook-creator/tsconfig.json
+Templates&Failed-Attempts.zip,,92,,analyze-combine/analyze&combine/ai-storybook-creator/pnpm-lock.yaml
+Templates&Failed-Attempts.zip,,2373,,analyze-combine/analyze&combine/ai-storybook-creator/package.json
+Templates&Failed-Attempts.zip,,443,,analyze-combine/analyze&combine/ai-storybook-creator/components.json
+Templates&Failed-Attempts.zip,,2813,,analyze-combine/analyze&combine/Arzi_NeuroArchitect_GPT/Arzi_NeuroArchitect.json
+Templates&Failed-Attempts.zip,,504,,analyze-combine/analyze&combine/Arzi_NeuroArchitect_GPT/README.txt
+balkan_ai_project_bundle.zip,,4362,,hume_ai_app_guide.md
+balkan_ai_project_bundle.zip,,5075,,balkan_ai_chatbot_modular_feature_architecture_plan_draft_2_improved.md
+balkan_ai_project_bundle.zip,,6918,,dbz_power_scanner_mvp_full_specs.md
+balkan_ai_project_bundle.zip,,3124,,balkan_ai_model_choices.md
+balkan_ai_project_bundle.zip,,2952,,balkan_ai_chatbot_mvp_tech_stack_table.md
+balkan_ai_project_bundle.zip,,2417347,,"ChatGPT Image Jun 14, 2025, 03_52_14 PM.png"
+balkan_ai_project_bundle.zip,,5388,,dbz_power_scanner_ui_texts.md
+balkan_ai_project_bundle.zip,,3730,,ai_platform_choices.md
+balkan_ai_project_bundle.zip,,2713727,,"ChatGPT Image Jun 14, 2025, 03_48_38 PM.png"

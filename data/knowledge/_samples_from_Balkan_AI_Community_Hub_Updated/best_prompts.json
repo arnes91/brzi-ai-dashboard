@@ -1,0 +1,19 @@
+{
+  "shorts_hook_variants": [
+    "Ako ne koristiš {{ALAT}}, bacaš pare.",
+    "Pet minuta ti treba da napraviš ovo sa mnom.",
+    "Najbrži način da zaradiš sa {{TEMA}} danas."
+  ],
+  "cta_variants": [
+    "Komentariši START za besplatan PDF.",
+    "Klikni sub i dobij naredni template."
+  ],
+  "long_form_openers": [
+    "Danas ti pokazujem TAČNO kako ja radim {{TEMA}} — bez okolišanja."
+  ],
+  "research_queries_seed": [
+    "site:youtube.com \"{{TEMA}}\" tutorial 2025",
+    "\"{{TEMA}}\" case study 2024..2025",
+    "pdf report {{TEMA}} 2024..2025"
+  ]
+}

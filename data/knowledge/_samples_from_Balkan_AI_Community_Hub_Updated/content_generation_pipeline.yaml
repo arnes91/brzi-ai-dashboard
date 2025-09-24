@@ -1,0 +1,31 @@
+# content_generation_pipeline.yaml
+name: content_generation_pipeline
+description: Ideja → Resursi → Generacija → Edit → Objavi → Mjeri
+steps:
+  - id: idea_capture
+    action: capture
+    output: idea.md
+  - id: research
+    action: notebooklm.generate_brief
+    inputs: [idea.md]
+    outputs: [Research_Brief.md, Source_Table.md]
+  - id: script
+    action: llm.generate_script
+    inputs: [Research_Brief.md, templates/VIDEO_SCRIPT_TEMPLATE.md]
+    outputs: [Script.md]
+  - id: metadata
+    action: llm.generate_metadata
+    inputs: [Script.md, templates/METADATA_KIT_TEMPLATE.json]
+    outputs: [Metadata_Kit.json]
+  - id: thumb
+    action: image.gen_prompts
+    inputs: [Metadata_Kit.json]
+    outputs: [thumb_prompts.txt]
+  - id: publish
+    action: platform.schedule
+    inputs: [Script.md, Metadata_Kit.json, thumb_prompts.txt]
+    outputs: [publish_log.txt]
+  - id: kpi_log
+    action: kpi.log
+    inputs: [platform.metrics]
+    outputs: [docs/kpi_log_{date}.md]

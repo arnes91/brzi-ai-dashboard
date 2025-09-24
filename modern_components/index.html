@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRZI AI Dashboard - Comprehensive Project Management Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Navigation Header -->
+    <nav class="bg-gray-800 border-b border-gray-700 px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <h1 class="text-2xl font-bold text-blue-400">BRZI AI Dashboard</h1>
+                <span class="text-gray-400 text-sm">Comprehensive Project Management Platform</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="themeToggle" class="p-2 rounded-lg bg-gray-700 hover:bg-gray-600 transition-colors">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-user text-sm"></i>
+                    </div>
+                    <span class="text-sm">Admin User</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="flex h-screen">
+        <!-- Sidebar Navigation -->
+        <aside class="w-64 bg-gray-800 border-r border-gray-700 overflow-y-auto">
+            <nav class="p-4">
+                <ul class="space-y-2">
+                    <li>
+                        <button class="nav-item w-full text-left px-4 py-3 rounded-lg bg-blue-600 text-white flex items-center space-x-3" data-section="dashboard">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-item w-full text-left px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-700 flex items-center space-x-3" data-section="brainstorming">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Idea Brainstorming</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-item w-full text-left px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-700 flex items-center space-x-3" data-section="projects">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Project Tracking</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-item w-full text-left px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-700 flex items-center space-x-3" data-section="knowledge">
+                            <i class="fas fa-book"></i>
+                            <span>Knowledge Base</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-item w-full text-left px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-700 flex items-center space-x-3" data-section="prompts">
+                            <i class="fas fa-code"></i>
+                            <span>Prompt Library</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-item w-full text-left px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-700 flex items-center space-x-3" data-section="analytics">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Analytics</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-item w-full text-left px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-700 flex items-center space-x-3" data-section="automation">
+                            <i class="fas fa-robot"></i>
+                            <span>Automation</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-item w-full text-left px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-700 flex items-center space-x-3" data-section="organization">
+                            <i class="fas fa-tasks"></i>
+                            <span>Organization Tools</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 overflow-y-auto">
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="section-content p-6">
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold mb-2">Dashboard Overview</h2>
+                    <p class="text-gray-400">Welcome to your comprehensive AI project management platform</p>
+                </div>
+
+                <!-- Key Metrics Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-gray-400 text-sm">Active Projects</p>
+                                <p class="text-2xl font-bold text-blue-400" id="activeProjects">12</p>
+                            </div>
+                            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-project-diagram text-white"></i>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex items-center text-sm">
+                            <span class="text-green-400">+2.5%</span>
+                            <span class="text-gray-400 ml-2">from last month</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-gray-400 text-sm">Ideas Generated</p>
+                                <p class="text-2xl font-bold text-green-400" id="ideasGenerated">247</p>
+                            </div>
+                            <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-lightbulb text-white"></i>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex items-center text-sm">
+                            <span class="text-green-400">+12.3%</span>
+                            <span class="text-gray-400 ml-2">from last month</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-gray-400 text-sm">Automation Tasks</p>
+                                <p class="text-2xl font-bold text-purple-400" id="automationTasks">89</p>
+                            </div>
+                            <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-robot text-white"></i>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex items-center text-sm">
+                            <span class="text-green-400">+8.1%</span>
+                            <span class="text-gray-400 ml-2">from last month</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-gray-400 text-sm">Knowledge Articles</p>
+                                <p class="text-2xl font-bold text-yellow-400" id="knowledgeArticles">156</p>
+                            </div>
+                            <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-book text-white"></i>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex items-center text-sm">
+                            <span class="text-green-400">+5.7%</span>
+                            <span class="text-gray-400 ml-2">from last month</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <h3 class="text-xl font-semibold mb-4">Project Progress Overview</h3>
+                        <canvas
+id="projectProgressChart"
+width="400"
+height="200"
+></canvas>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <h3 class="text-xl font-semibold mb-4">Monthly Activity</h3>
+                        <canvas
+id="monthlyActivityChart"
+width="400"
+height="200"
+></canvas>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                    <h3 class="text-xl font-semibold mb-4">Recent Activity</h3>
+                    <div class="space-y-4" id="recentActivity">
+                        <!-- Activity items will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Idea Brainstorming Section -->
+            <section id="brainstorming" class="section-content p-6 hidden">
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold mb-2">Idea Brainstorming</h2>
+                    <p class="text-gray-400">Capture, organize, and develop your creative ideas</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <!-- Idea Input -->
+                    <div class="lg:col-span-2">
+                        <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 mb-6">
+                            <h3 class="text-xl font-semibold mb-4">New Idea</h3>
+                            <form id="ideaForm">
+                                <div class="mb-4">
+                                    <label class="block text-sm font-medium mb-2">Title</label>
+                                    <input
+type="text"
+id="ideaTitle"
+class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500"
+placeholder="Enter idea title"
+>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-sm font-medium mb-2">Description</label>
+                                    <textarea
+id="ideaDescription"
+rows="4"
+class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500"
+placeholder="Describe your idea in detail"
+></textarea>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-sm font-medium mb-2">Category</label>
+                                    <select id="ideaCategory" class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500">
+                                        <option value="product">Product Development</option>
+                                        <option value="marketing">Marketing</option>
+                                        <option value="automation">Automation</option>
+                                        <option value="research">Research</option>
+                                        <option value="content">Content Creation</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-sm font-medium mb-2">Priority</label>
+                                    <select id="ideaPriority" class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500">
+                                        <option value="low">Low</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="high">High</option>
+                                        <option value="urgent">Urgent</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors">
+                                    <i class="fas fa-plus mr-2"></i>Add Idea
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Idea Categories -->
+                    <div>
+                        <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 mb-6">
+                            <h3 class="text-xl font-semibold mb-4">Categories</h3>
+                            <div class="space-y-2" id="categoryList">
+                                <!-- Categories will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ideas List -->
+                <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold">Your Ideas</h3>
+                        <div class="flex items-center space-x-2">
+                            <input
+type="text"
+id="ideaSearch"
+placeholder="Search ideas..."
+class="px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500"
+>
+                            <select id="ideaFilter" class="px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500">
+                                <option value="all">All Categories</option>
+                                <option value="product">Product Development</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="automation">Automation</option>
+                                <option value="research">Research</option>
+                                <option value="content">Content Creation</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="ideasList" class="space-y-4">
+                        <!-- Ideas will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Tracking Section -->
+            <section id="projects" class="section-content p-6 hidden">
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold mb-2">Project Tracking</h2>
+                    <p class="text-gray-400">Monitor and manage your project progress</p>
+                </div>
+
+                <!-- Project Stats -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 text-center">
+                        <div class="text-3xl font-bold text-blue-400 mb-2">12</div>
+                        <div class="text-gray-400">Total Projects</div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 text-center">
+                        <div class="text-3xl font-bold text-green-400 mb-2">8</div>
+                        <div class="text-gray-400">Active</div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 text-center">
+                        <div class="text-3xl font-bold text-yellow-400 mb-2">3</div>
+                        <div class="text-gray-400">On Hold</div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 text-center">
+                        <div class="text-3xl font-bold text-purple-400 mb-2">1</div>
+                        <div class="text-gray-400">Completed</div>
+                    </div>
+                </div>
+
+                <!-- Projects List -->
+                <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-semibold">Projects</h3>
+                        <button id="addProjectBtn" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors">
+                            <i class="fas fa-plus mr-2"></i>New Project
+                        </button>
+                    </div>
+                    <div id="projectsList" class="space-y-4">
+                        <!-- Projects will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Knowledge Base Section -->
+            <section id="knowledge" class="section-content p-6 hidden">
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold mb-2">Knowledge Base</h2>
+                    <p class="text-gray-400">Organize and access your knowledge repository</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                    <!-- Search and Filters -->
+                    <div class="lg:col-span-3">
+                        <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 mb-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex-1">
+                                    <input
+type="text"
+id="knowledgeSearch"
+placeholder="Search knowledge base..."
+class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500"
+>
+                                </div>
+                                <button class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg transition-colors">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <button id="addKnowledgeBtn" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors">
+                                    <i class="fas fa-plus mr-2"></i>Add Article
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Knowledge Articles -->
+                        <div id="knowledgeArticlesList" class="space-y-4">
+                            <!-- Articles will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Categories Sidebar -->
+                    <div>
+                        <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                            <h3 class="text-lg font-semibold mb-4">Categories</h3>
+                            <div id="knowledgeCategories" class="space-y-2">
+                                <!-- Categories will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Prompt Library Section -->
+            <section id="prompts" class="section-content p-6 hidden">
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold mb-2">Prompt Library</h2>
+                    <p class="text-gray-400">Manage your AI prompts and templates</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                    <!-- Prompts List -->
+                    <div class="lg:col-span-3">
+                        <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 mb-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center space-x-4">
+                                    <input
+type="text"
+id="promptSearch"
+placeholder="Search prompts..."
+class="px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500"
+>
+                                    <select id="promptFilter" class="px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500">
+                                        <option value="all">All Categories</option>
+                                        <option value="content">Content Creation</option>
+                                        <option value="analysis">Analysis</option>
+                                        <option value="coding">Coding</option>
+                                        <option value="research">Research</option>
+                                    </select>
+                                </div>
+                                <button id="addPromptBtn" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors">
+                                    <i class="fas fa-plus mr-2"></i>New Prompt
+                                </button>
+                            </div>
+                        </div>
+
+                        <div id="promptsList" class="space-y-4">
+                            <!-- Prompts will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Prompt Categories -->
+                    <div>
+                        <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                            <h3 class="text-lg font-semibold mb-4">Categories</h3>
+                            <div id="promptCategories" class="space-y-2">
+                                <!-- Categories will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Analytics Section -->
+            <section id="analytics" class="section-content p-6 hidden">
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold mb-2">Analytics Dashboard</h2>
+                    <p class="text-gray-400">Track performance metrics and insights</p>
+                </div>
+
+                <!-- Analytics Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold">Productivity Score</h3>
+                            <i class="fas fa-chart-line text-blue-400"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-blue-400 mb-2">87%</div>
+                        <div class="text-sm text-green-400">+5% from last week</div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold">Tasks Completed</h3>
+                            <i class="fas fa-check-circle text-green-400"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-green-400 mb-2">142</div>
+                        <div class="text-sm text-green-400">+12 from yesterday</div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold">Time Saved</h3>
+                            <i class="fas fa-clock text-purple-400"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-purple-400 mb-2">24h</div>
+                        <div class="text-sm text-green-400">+3h from last week</div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold">Automation Rate</h3>
+                            <i class="fas fa-robot text-yellow-400"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-yellow-400 mb-2">73%</div>
+                        <div class="text-sm text-green-400">+8% from last month</div>
+                    </div>
+                </div>
+
+                <!-- Charts -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <h3 class="text-xl font-semibold mb-4">Weekly Performance</h3>
+                        <canvas
+id="weeklyPerformanceChart"
+width="400"
+height="200"
+></canvas>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <h3 class="text-xl font-semibold mb-4">Task Distribution</h3>
+                        <canvas
+id="taskDistributionChart"
+width="400"
+height="200"
+></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Automation Section -->
+            <section id="automation" class="section-content p-6 hidden">
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold mb-2">Automation Hub</h2>
+                    <p class="text-gray-400">Manage workflows and automated processes</p>
+                </div>
+
+                <!-- Automation Stats -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold">Active Workflows</h3>
+                            <i class="fas fa-play-circle text-green-400"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-green-400">15</div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold">Tasks Automated</h3>
+                            <i class="fas fa-robot text-blue-400"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-blue-400">1,247</div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold">Time Saved</h3>
+                            <i class="fas fa-clock text-purple-400"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-purple-400">156h</div>
+                    </div>
+                </div>
+
+                <!-- Workflow Templates -->
+                <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 mb-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold">Workflow Templates</h3>
+                        <button id="createWorkflowBtn" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors">
+                            <i class="fas fa-plus mr-2"></i>Create Workflow
+                        </button>
+                    </div>
+                    <div id="workflowTemplates" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <!-- Workflow templates will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Active Automations -->
+                <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                    <h3 class="text-xl font-semibold mb-4">Active Automations</h3>
+                    <div id="activeAutomations" class="space-y-4">
+                        <!-- Active automations will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Organization Tools Section -->
+            <section id="organization" class="section-content p-6 hidden">
+                <div class="mb-6">
+                    <h2 class="text-3xl font-bold mb-2">Organization Tools</h2>
+                    <p class="text-gray-400">Task management, scheduling, and optimization</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <!-- Task Management -->
+                    <div class="lg:col-span-2">
+                        <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 mb-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-xl font-semibold">Task Management</h3>
+                                <button id="addTaskBtn" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors">
+                                    <i class="fas fa-plus mr-2"></i>Add Task
+                                </button>
+                            </div>
+                            
+                            <!-- Task Filters -->
+                            <div class="flex items-center space-x-4 mb-4">
+                                <button class="task-filter active px-4 py-2 rounded-lg bg-blue-600 text-white" data-filter="all">All</button>
+                                <button class="task-filter px-4 py-2 rounded-lg bg-gray-700 text-gray-300 hover:bg-gray-600" data-filter="pending">Pending</button>
+                                <button class="task-filter px-4 py-2 rounded-lg bg-gray-700 text-gray-300 hover:bg-gray-600" data-filter="in-progress">In Progress</button>
+                                <button class="task-filter px-4 py-2 rounded-lg bg-gray-700 text-gray-300 hover:bg-gray-600" data-filter="completed">Completed</button>
+                            </div>
+
+                            <div id="tasksList" class="space-y-3">
+                                <!-- Tasks will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calendar and Quick Stats -->
+                    <div>
+                        <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 mb-6">
+                            <h3 class="text-lg font-semibold mb-4">Quick Stats</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-400">Total Tasks</span>
+                                    <span class="font-semibold" id="totalTasks">0</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-400">Completed</span>
+                                    <span class="font-semibold text-green-400" id="completedTasks">0</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-400">In Progress</span>
+                                    <span class="font-semibold text-yellow-400" id="inProgressTasks">0</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-400">Pending</span>
+                                    <span class="font-semibold text-red-400" id="pendingTasks">0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                            <h3 class="text-lg font-semibold mb-4">Today's Schedule</h3>
+                            <div id="todaySchedule" class="space-y-3">
+                                <!-- Schedule items will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <!-- Add Project Modal -->
+    <div id="addProjectModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-gray-800 rounded-lg p-6 w-full max-w-md mx-4">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-xl font-semibold">New Project</h3>
+                <button class="modal-close text-gray-400 hover:text-white">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="projectForm">
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Project Name</label>
+                    <input
+type="text"
+id="projectName"
+class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500"
+required
+>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Description</label>
+                    <textarea
+id="projectDescription"
+rows="3"
+class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500"
+></textarea>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Priority</label>
+                    <select id="projectPriority" class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <div class="flex space-x-3">
+                    <button type="button" class="modal-close flex-1 px-4 py-2 bg-gray-600 hover:bg-gray-700 rounded-lg transition-colors">Cancel</button>
+                    <button type="submit" class="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors">Create Project</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add Task Modal -->
+    <div id="addTaskModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-gray-800 rounded-lg p-6 w-full max-w-md mx-4">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-xl font-semibold">New Task</h3>
+                <button class="modal-close text-gray-400 hover:text-white">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="taskForm">
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Task Title</label>
+                    <input
+type="text"
+id="taskTitle"
+class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500"
+required
+>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Description</label>
+                    <textarea
+id="taskDescription"
+rows="3"
+class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500"
+></textarea>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Priority</label>
+                    <select id="taskPriority" class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Due Date</label>
+                    <input
+type="date"
+id="taskDueDate"
+class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500"
+>
+                </div>
+                <div class="flex space-x-3">
+                    <button type="button" class="modal-close flex-1 px-4 py-2 bg-gray-600 hover:bg-gray-700 rounded-lg transition-colors">Cancel</button>
+                    <button type="submit" class="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors">Create Task</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/dashboard.js"></script>
+    <script src="./js/brainstorming.js"></script>
+    <script src="./js/projects.js"></script>
+    <script src="./js/knowledge.js"></script>
+    <script src="./js/prompts.js"></script>
+    <script src="./js/analytics.js"></script>
+    <script src="./js/automation.js"></script>
+    <script src="./js/organization.js"></script>
+    <script src="./js/storage.js"></script>
+</body>
+</html>

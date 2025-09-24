@@ -1,0 +1,8 @@
+# ai_promo_to_paid_funnel.yaml
+name: ai_promo_to_paid_funnel
+steps:
+  - free_short: viral hook + lead magnet link
+  - long_tutorial: detaljni vodič
+  - lead_magnet: PDF checklista / template
+  - entry_offer: preset/prompt pack ili 15-min konzultacije
+  - upsell: projekat ili paket

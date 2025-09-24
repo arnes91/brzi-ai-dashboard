@@ -1,0 +1,11 @@
+# agent_publish_pipeline.yaml
+name: agent_publish_pipeline
+triggers:
+  - on_file: Metadata_Kit.json
+  - on_time: "18:30 CET weekdays, 11:30 CET Sunday"
+tasks:
+  - validate_metadata
+  - create_title_variants
+  - schedule_upload
+  - post_community_teaser
+  - log_metrics_after_24h

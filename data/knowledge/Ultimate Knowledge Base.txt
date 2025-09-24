@@ -1,0 +1,392 @@
+Please have a detailed look and understanding at the following template guide/knowledge base add it into a canvas, edit it only in regard to the formatting so it's likening better, modern, is interactive, easily visible organized etc. If that means that you have to change it to some coding language which I can render directly, so you can write some kind of app/program to be the container in order to achieve the best results, then feel free to do so:
+
+"# ULTIMATE KNOWLEDGE BASE: Optimizing Brzi Arzi's AI-Driven YouTube Music Channel ✨✨✨ 
+
+## I. CORE STRATEGY & GOALS ✨✨✨
+
+### 1.1. Artist Persona & Brand ✨✨✨
+- **Artist Name**: Brzi Arzi
+- **Brand Identity**: An AI-driven electronic music artist pushing creative boundaries and challenging industry norms, embracing a futuristic and slightly edgy aesthetic.
+- **Music Genre Focus**: Electronic music, with a primary focus on:
+  - **Anime Electro/Future Bass (Playful & Quirky)**
+  - **Vocaloid Trance/Hardstyle (High Energy)**
+  - Minimal Deep Techno
+  - Drum & Bass
+  - Experimental AI-Hybrid Tracks
+  - **Secondary Genres (to be explored)**: Cyberpunk, Phonk, Trap, Jungle
+- **Marketing Philosophy**:
+  - Demonstrate the power of AI as a creative tool in music production.
+  - Generate music with "soul" and artistic merit, challenging perceptions of AI-generated content.
+  - Engage both fans and critics through innovative content and a strategic online presence.
+  - Embrace a “rebellious” or “challenger” undertone, questioning the status quo.
+  - **Prioritize visually compelling thumbnails and video presentation to maximize click-through rates and initial viewer engagement.**
+
+### 1.2. Platform & Distribution ✨✨✨
+- **Primary Platform**: YouTube Music (for distribution, audience engagement, and viral growth).
+- **Secondary Platform**: DistroKid (for broader music distribution to other streaming services).
+- **Other Platforms (for promotion)**: TikTok, Instagram Reels/Stories, Facebook.
+
+### 1.3. Overarching Goals ✨✨✨
+- Achieve significant YouTube channel growth. Focus on maximizing views, watch time, subscriber count, and engagement (likes, comments, shares).
+- Attain viral success for music releases by focusing on high click-through rates (CTR), audience retention, and playlist additions.
+- **Specifically optimize for high CTR by continuously improving thumbnail and title effectiveness through A/B testing and data analysis.**
+- Establish a strong, recognizable artist brand through consistent visual identity and a distinct sonic signature.
+- Prove the viability and artistic merit of AI-driven music, positioning Brzi Arzi as a pioneer in the AI music space.
+
+---
+
+## II. KEY SUCCESS FACTORS (DATA-DRIVEN) ✨✨✨
+Based on analysis of YouTube analytics and iterative experimentation, these elements are critical for maximizing views, retention, and virality. ✨✨✨
+
+### 2.1. Thematic Resonance ✨✨✨
+- **Digital Transformation & Power**: Themes of technological advancement, digital worlds, AI influence, and empowerment resonate strongly.
+- **Rebellion & Edge**: A slightly edgy, rebellious undertone (e.g., "beast mode," "cyber psycho" concepts) captures attention.
+- **Less Effective Themes (based on data)**: Overly emotional or sentimental themes without a strong, driving beat.
+
+### 2.2. Musical Elements ✨✨✨
+- **High-Energy Intros**:
+  - Start tracks with immediate impact, avoiding slow, drawn-out introductions.
+  - Use aggressive beats, captivating synth lines, and dynamic sound design from the very beginning.
+- **Intense & Catchy Hooks**:
+  - Hooks should be rhythmically powerful, melodically memorable, and sonically striking.
+  - Experiment with trap, jungle, and experimental beat structures for hooks.
+- **Dynamic Transitions**:
+  - Incorporate frequent, noticeable transitions to maintain listener engagement and prevent monotony.
+  - Keep energy levels consistently high throughout the track.
+- **Vocal Elements (When Used)**:
+  - Distinctive vocal segments (even if not traditional lyrics) are highly effective.
+  - Consider using:
+    - Processed vocals
+    - Catchy melodic vocal phrases
+    - Vocaloid elements (e.g., Miku-inspired sounds)
+- **Incorporate "Viral Moments":** Intentionally design sections of tracks (drops, breakdowns, unique sounds) that are highly shareable and reaction-worthy. Think about creating moments that viewers would want to clip and share on social media.
+- **Less Effective Musical Elements (based on data)**: Slow tempos, lack of dynamic range, predictable structures, and generic sounds.
+
+### 2.3. Title & Presentation ✨✨✨
+- **Emotionally Charged Titles**: Use titles that evoke strong emotions (e.g., "Seduction," "Energy," "Dangerous," "Rage," "Beast").
+- **Genre Clarity (Combined with Emotion)**: Combine emotional keywords with explicit genre labels (e.g., "Cyber Techno," "Anime Electro," "Vocaloid Trance").
+- **Intrigue & Challenge**: Titles that pose a challenge or spark curiosity (e.g., "You Are NOT Ready," "Challenge Accepted") perform well.
+- **Concise & Memorable Titles**:
+  - Short, punchy titles (1–3 words) are generally more effective for virality.
+  - Consider using subtitles for added context if needed. Example: "Manifest: Digital Dominance – TribalNeed, Insane Energy Activated"
+- **Visually Striking Covers**:
+  - High-contrast color schemes (neon colors, dark backgrounds).
+  - Edgy and personalized artwork, aligning with chosen genre (e.g., cyberpunk, anime).
+  - **Develop a unique avatar or mascot to represent "Brzi Arzi" visually across all platforms and thumbnails for strong brand recognition.**
+  - A consistent, recognizable visual brand is essential for click-through rates.
+  - **Implement A/B testing of different thumbnail designs for each release to identify the most effective visuals for maximizing CTR.**
+- **Less Effective Titles & Presentation (based on data)**: Long, descriptive titles; generic or bland cover art; inconsistent branding; **thumbnails with low Click-Through Rate (CTR) -  prioritize testing and iterative improvement of thumbnails.**
+
+---
+
+## III. SUNO AI PROMPT ENGINEERING ✨✨✨
+
+### 3.1. Prompt Structure (3-Part) ✨✨✨
+1. **TITLE**:
+   - 1–3 words (max 4 words if necessary, with compelling justification).
+   - Genre-relevant, emotionally charged, or challenging.
+   - Use universally appealing terms.
+   - Examples: "Cyber Beast", "Power Fusion", "Hyper Rush", "Digital Dominion"
+   - (Contradiction Resolved: Initially, there was a preference for Bosnian titles, but data showed better performance with English/universal terms.)
+
+2. **LYRICS (Prompt Body)**:
+   - Maximum 3000 characters.
+   - Use `[SQUARE BRACKET METATAGS]` to define sections and effects.
+   - Section Tags: `[INTRO], [VERSE], [CHORUS], [HOOK], [DROP], [BRIDGE], [OUTRO], [BUILD-UP]`
+   - Effect Tags: (See Section 3.3 for a comprehensive list).
+   - Use descriptive, evocative language within metatags to guide SUNO AI. Combine technical instructions with emotional descriptors. **Specifically use genre-relevant keywords within tags (e.g., `[CYBERPUNK BASSLINE]`, `[ANIME SYNTH LEAD]`, `[VOCALOID VOCALS]`).**
+     - Examples: `[POWERFUL ROLLING BASSLINE], [CYBERPUNK ATMOSPHERE], [VOCALOID LEAD MELODY], [GLITCH FX], [BASS DROP]`
+   - Specify technical parameters:
+     - BPM (Beats Per Minute)
+     - Effects (reverb, sidechain, modulation)
+     - Instrumentation
+   - **NO regular text outside of tags.** Suno will attempt to sing it.
+   - End with `[COVER ART: ...]` tag to provide image generation instructions.
+   - **Optimize track length for shareability and retention (aim for 2:30 - 3:30 minutes for most tracks, experiment with shorter tracks for viral moments).**
+
+3. **STYLE**:
+   - Comma-separated list of genre keywords, energy descriptors, and vibe adjectives.
+   - Maximum 120 characters.
+   - Examples: `Electro, High Energy, Aggressive DnB, Futuristic, Beach Chill Minimal Deep Tech, 125 BPM, Sophisticated`
+   - **Note**: Avoid mentioning specific artists (e.g., "Inspired by N'to & Worakls") in the STYLE tag to avoid potential copyright issues. Instead, describe the sound (e.g., "melodic techno with organic elements").
+
+### 3.2. Example Prompt ✨✨✨
+content_copy
+download
+Use code with caution.
+Markdown
+
+TITLE:
+Cyber Pulse
+
+LYRICS:
+[INTRO] Launch into a SUPER SAIYAN TRANSFORMATION: soaring synths, deep atmospheric pads rising.
+[VERSE] Morph audio sample vocals (ja snimim sebe) into music fx – fuse, defuse with Miku Vocaloid for epic eargasm effects; let the digital voice echo: "DJ Arziii A aaa rzii."
+[CHORUS] Explosive drop with pounding bass and cascading arpeggios, forming a viral, anthemic hook.
+[BRIDGE] [Vocal glitch: (oooyyy, ooh-yeah)] to add surprising ear candy.
+[OUTRO] Fade into dreamy, ambient echoes as the track gradually dissolves.
+[COVER ART: A vibrant cyber-anime illustration with neon gradients (electric blue, hot pink); a central futuristic figure exuding energy; digital glitch motifs and a Vaporwave touch.]
+
+STYLE:
+Electro, High Energy, Aggressive DnB, Futuristic
+
+### 3.3. Effect Tag Library ✨✨✨
+This is a consolidated list of effect tags from various sources within the provided text, categorized for clarity. ✨✨✨
+
+#### 3.3.1. Basic Effects ✨✨✨
+- `[BASS DROP]`
+- `[SYNTH RISE]`
+- `[GLITCH FX]` / `[GLITCH ECHO]`
+- `[POWER SURGE]`
+- `[SOFT FADE]`
+
+#### 3.3.2. Mood & Atmosphere ✨✨✨
+- `[AMBIENT PAD]`
+- `[WARM GLOW]`
+- `[DARK PULSE]`
+- `[OCEAN WHISPERS]`
+- `[GENTLE WAVE SOUNDS]`
+- `[COASTAL AMBIENCE]`
+- `[CYBERPUNK ATMOSPHERE]`
+- `[VAPORWAVE ATMOSPHERE]`
+
+#### 3.3.3. Technical & Digital ✨✨✨
+- `[TECH SURGE]`
+- `[SYSTEM BOOT]`
+- `[DATA FLOW]`
+- `[CODE PULSE]`
+- `[TECHNICAL BEEP]`
+- `[MECHANICAL WHIR]`
+- `[CYBERPUNK BASSLINE]`
+
+#### 3.3.4. Vocal Effects ✨✨✨
+- `[MORPHE VOCALS]`
+- `[JAPANESE WHISPER]`
+- `[MIKU FUSION]` / `[MIKU CHOP]`
+- `[VOCALOID LEAD MELODY]`
+- `[VOCAL GLITCH: (Specific Phrasing)]` **(Use specific phonetic phrasing within parentheses to guide the glitch effect, e.g., `[VOCAL GLITCH: (ee-ooh-ah)]`)**
+- `[JAPANESE VOCAL SAMPLES]` **(For incorporating short, sampled Japanese phrases)**
+
+#### 3.3.5. Movement & Action ✨✨✨
+- `[ENGINE REV]`
+- `[TIRE SCREECH]`
+- `[TOOL SOUNDS]`
+- `[BUILD UP]`
+- `[INTENSITY SHIFT]`
+- `[CALM BREAK]`
+- `[PATTERN CHANGES]`
+- `[ANIME SYNTH LEAD]`
+
+#### 3.3.6 Character & Transformation ✨✨✨
+- `[BEAST ROAR]`
+- `|BEAST EFFECT|` (Alternative formatting from "Universal Sonic Architecture")
+- `⚡POWER EFFECT⚡` (Alternative formatting from "Universal Sonic Architecture")
+
+*(Note: The alternative formatting with symbols like | | and ⚡ ⚡ is not explicitly supported by standard markdown or likely by Suno AI. The standard [ ] brackets are recommended for consistency and compatibility.)* ✨✨✨
+
+### 3.4. Content & Creative Strategies within Prompts ✨✨✨
+- **Balance Technical Detail & Emotion**: Blend precise technical instructions (BPM, effects) with evocative language that conveys the desired mood and story.
+- **Viral Hooks in Prompts**: Describe elements that create "earworm" potential:
+  - Repetitive melodic phrases
+  - Impactful rhythmic patterns
+  - Signature sounds
+- **Challenge & Innovation**: Intentionally push SUNO AI's boundaries. Experiment with:
+  - Unconventional genre fusions
+  - Unusual sound design requests
+- **Brand Consistency**: Use consistent keywords, themes, and stylistic descriptors across prompts to build a recognizable "Brzi Arzi" sound and brand identity.
+- **Incorporate Personal Narrative (Subtly)**: While avoiding overly sentimental lyrics, weave in elements of personal experience, ambition, and the "digital transformation" theme.
+
+---
+
+---
+
+## IV. AI-DRIVEN ANALYSIS PROCESS (Streamlined & Interactive) ✨✨✨
+
+Instead of separate chains, we'll use a more conversational, step-by-step analysis process, mirroring our successful session. This process is designed to be iterative and data-driven, guiding you through a clear workflow for optimizing your music channel.
+
+**Process Overview:**
+
+This process focuses on analyzing your YouTube analytics data and then using AI to gain insights into song titles, cover images, and audio characteristics to inform future creative decisions.  It's designed to be repeated regularly after new releases to ensure continuous improvement.
+
+**Steps:**
+
+**Step 1: Data Extraction - YouTube Analytics 📊**
+
+1.  **Action:** Log in to your YouTube Studio.
+2.  **Action:** Navigate to the "Analytics" section and export your video performance data.
+3.  **Data to Export:** Ensure your export includes at least the following metrics for each video:
+    *   Video Title
+    *   Upload Date
+    *   Views
+    *   Likes
+    *   Dislikes
+    *   Click-Through Rate (CTR)
+    *   Average View Duration
+    *   Audience Retention (%)
+    *   Shares
+    *   Comments
+4.  **Format:** Save the exported data as a CSV (Comma Separated Values) file.
+
+**Step 2:  Data Input & Initial Performance Grouping 🔍**
+
+1.  **Action:** Choose an AI model capable of analyzing data and text (like a large language model, or even a script you create).
+2.  **Input Data:** Provide the AI model with the exported CSV data from Step 1.
+3.  **Prompt (for AI Model - Step 2):**
+
+    ```
+    Task: Analyze the provided YouTube analytics data (CSV format) for Brzi Arzi's music channel to identify top and bottom performing songs based on key metrics.
+
+    Instructions:
+    1. Data Input: You will receive YouTube analytics data in CSV format.
+    2. Identify Key Metrics: Focus on 'Views', 'Click-Through Rate (CTR)', and 'Average View Duration' as primary performance indicators.
+    3. Performance Grouping:
+        * **Identify Top Performers:** List the titles of the songs that rank highest in 'Views', 'CTR', and 'Average View Duration' (aim for top 2-3 in each category, noting if songs overlap).
+        * **Identify Bottom Performers:** List the titles of the songs that rank lowest in 'Views' (aim for bottom 2-3).
+    4. Output: Provide a clear, concise list of:
+        * Top Performing Songs (by Views, CTR, Avg. View Duration) - with titles listed under each category.
+        * Bottom Performing Songs (by Views) - with titles listed.
+
+    [PASTE YOUR CSV DATA HERE]
+    ```
+
+4.  **Output:** The AI model will provide you with a list of song titles categorized as "Top Performers" (by Views, CTR, Avg. View Duration) and "Bottom Performers".
+
+**Step 3: Visual Analysis - Cover Images & Thumbnails 🖼️**
+
+1.  **Action:** For the "Top Performers" and "Bottom Performers" identified in Step 2, gather their YouTube thumbnail/cover images.  Ideally, provide direct image URLs to the AI model if possible.
+2.  **Prompt (for AI Model - Step 3 - Requires Multimodal AI capable of Image Analysis):**
+
+    ```
+    Task: You are a visual marketing expert analyzing cover images/thumbnails for Brzi Arzi's YouTube music channel. Compare the visuals of top-performing songs against bottom-performing songs to identify visual elements that correlate with success and failure.
+
+    Instructions:
+    1. Song Performance Context: You are provided with lists of "Top Performing Songs" and "Bottom Performing Songs" (titles from the previous analysis step).
+    2. Image Input: You will be provided with the cover images/thumbnails for these songs (ideally via URLs).
+    3. Comparative Visual Analysis: Analyze the images, focusing on:
+        * **Color Palette:** Dominant colors, contrast, use of neon, dark tones, etc.
+        * **Typography:** Font styles, text size, readability, placement.
+        * **Imagery & Style:** Subject matter (characters, abstract art, etc.), art style (anime, cyberpunk, realistic), use of brand elements.
+        * **Composition & Visual Hierarchy:** How attention is drawn, key visual focal points.
+        * **CTR Correlation (Infer):** Based on your visual analysis and the performance context (Top vs. Bottom), infer which visual elements are *likely* contributing to higher or lower Click-Through Rates (CTR).
+    4. Actionable Visual Recommendations:
+        * Provide specific, actionable guidelines for future cover image/thumbnail design.
+        * Detail visual elements to **emphasize** for better performance (e.g., "Use high contrast neon palettes," "Feature the Arzi avatar prominently," "Use bold, readable sans-serif fonts").
+        * Detail visual elements to **avoid** or improve (e.g., "Avoid muted color palettes," "Ensure text is always legible at thumbnail size").
+
+    Performance Context:
+    Top Performing Songs (by Views): [List of Top Performing Song Titles]
+    Bottom Performing Songs (by Views): [List of Bottom Performing Song Titles]
+
+    Image URLs (or Image Data): [Provide Image URLs or Data Here - if your AI model can accept this directly]
+    ```
+
+3.  **Output:** The AI model will provide you with a text-based analysis of the cover images, highlighting effective and ineffective visual elements and giving actionable design recommendations.
+
+**Step 4: Audio Analysis - Song Characteristics 🎧**
+
+1.  **Action:** For the "Top Performers" (especially Highest Retention, Highest CTR, Highest Views) and "Bottom Performers" identified in Step 2, prepare the audio files of these songs.
+2.  **Prompt (for AI Model - Step 4 - Requires Multimodal AI capable of Audio Analysis):**
+
+    ```
+    Task: You are a music production expert analyzing Brzi Arzi's music. Compare the audio characteristics of top-performing songs against bottom-performing songs to identify sonic elements that drive listener engagement and virality.
+
+    Instructions:
+    1. Song Performance Context: You are provided with lists of "Top Performing Songs" and "Bottom Performing Songs" (titles from Step 2 analysis).  Specifically note the songs identified as "Highest Retention", "Highest CTR", and "Highest Views".
+    2. Audio Input: You will be provided with the audio files of these songs.
+    3. Comparative Audio Analysis: Analyze the audio of each song, focusing on:
+        * **Intro Impact (0-5 seconds):** How effectively does the intro grab attention in the first few seconds? Identify impactful intro elements.
+        * **Hook Effectiveness:** Analyze the main hook (melodic, rhythmic, sonic). Is it catchy, memorable, and energetic?
+        * **Energy & Dynamics:** How does the song's energy level evolve? Are transitions effective? Is there dynamic variation to maintain interest?
+        * **Instrumentation & Sound Design:** Key instruments, synth sounds, drum patterns, unique sound design elements. Note differences between high and low performers.
+        * **Vocal Elements (if present):** Vocal processing, melodic phrases, catchiness, and mix prominence.
+        * **Structure & Pacing:** Overall song structure, arrangement, and how pacing contributes to retention and engagement.
+    4. Actionable Audio Recommendations:
+        * Provide specific, parameter-driven recommendations for future music production.
+        * Suggest concrete audio modifications to enhance engagement (e.g., "Increase intro drum intensity," "Shorten hook repetition for memorability," "Add a specific synth sound for genre reinforcement").
+        * Focus on audio elements that are *likely* correlated with higher views, CTR, and retention based on the comparative analysis.
+
+    Performance Context:
+    Top Performing Songs (by Views, CTR, Avg. View Duration): [List of Top Performing Song Titles]
+    Bottom Performing Songs (by Views): [List of Bottom Performing Song Titles]
+    Highest Retention Song: [Song Title of Highest Retention Song]
+    Highest CTR Song: [Song Title of Highest CTR Song]
+    Highest View Count Song: [Song Title of Highest View Count Song]
+
+    Audio Files (or Stream URLs): [Provide Audio Files or Stream URLs Here - if your AI model can accept this directly]
+    ```
+
+3.  **Output:** The AI model will provide a text-based analysis of the audio, highlighting effective and ineffective sonic elements and giving actionable music production recommendations.
+
+**Step 5:  Iterate & Optimize 🔄**
+
+1.  **Action:** Review the AI-generated recommendations from Step 3 (Visuals) and Step 4 (Audio).
+2.  **Action:**  Incorporate these recommendations into your creative process for your next music releases – for song generation prompts, title creation, and cover art design.
+3.  **Action:**  **Crucially - Implement A/B testing for thumbnails and titles** to directly measure what works best with *your* audience.
+4.  **Action:**  After your next release cycle, repeat this entire 5-step analysis process with the new performance data.
+5.  **Goal:**  Continuously refine your creative and promotional strategies based on data-driven insights. This iterative feedback loop is key to long-term growth and virality.
+
+---
+
+**Formatting Notes for Enhanced Readability & Potential "App-Like" Structure:**
+
+*   **Markdown Headings:**  `##` and `###` headings are used for clear section and subsection organization.
+*   **Bullet Points & Numbered Lists:** Used for easy-to-follow steps and lists of recommendations.
+*   **Code Blocks:**  Prompts are enclosed in code blocks for clear separation and easy copying/pasting into AI models.
+*   **Emojis:** Emojis like 📊, 🔍, 🖼️, 🎧, 🔄 are used for visual cues and to make the document more engaging and less text-heavy.  These could be replaced with simple icons in a web-based format.
+*   **Clear Step-by-Step Instructions:** Each step is broken down into actionable sub-steps, making the process less daunting.
+
+**Potential "App-Like" Adaptation (Conceptual - Very Basic):**
+
+If you wanted to make this a very simple "one-file" HTML app, you could imagine a structure like this:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Brzi Arzi YouTube Analysis</title>
+</head>
+<body>
+  <h1>IV. AI-DRIVEN ANALYSIS PROCESS</h1>
+
+  <h2>Step 1: Data Extraction - YouTube Analytics</h2>
+  <p>...</p>
+
+  <h2>Step 2: Data Input & Initial Performance Grouping</h2>
+  <textarea id="csvData" placeholder="Paste your CSV data here"></textarea>
+  <button onclick="runAnalysisStep2()">Analyze Data (Step 2)</button>
+  <div id="step2Output"></div>  <!- Output from Step 2 will appear here -->
+
+  <h2>Step 3: Visual Analysis - Cover Images & Thumbnails</h2>
+  <p>...</p>
+  <!- ... (Add input fields or methods for Image URLs, and output area) -->
+
+  <h2>Step 4: Audio Analysis - Song Characteristics</h2>
+  <p>...</p>
+  <!- ... (Add input fields or methods for Audio Files/URLs and output area) -->
+
+  <h2>Step 5: Iterate & Optimize</h2>
+  <p>...</p>
+
+  <script>
+    // Basic JavaScript functions to handle button clicks and display output (you'd need to integrate with an AI API or have a simple backend for actual analysis)
+    function runAnalysisStep2() {
+      const csvData = document.getElementById("csvData").value;
+      // ... (Logic to send CSV data to AI model and get results - Placeholder)
+      const analysisResults = "Placeholder analysis results from AI for Step 2";
+      document.getElementById("step2Output").innerText = analysisResults;
+    }
+    // ... (Similar functions for Steps 3 & 4)
+  </script>
+</body>
+</html>
+Use code with caution.
+Markdown
+Important Note on "App-Like" Structure: The HTML above is a very basic conceptual outline. To make a truly functional "app," you would need to:
+
+Integrate with an AI API or have a backend: The JavaScript runAnalysisStep2() function is just a placeholder. You would need to connect it to an actual AI model (like OpenAI's API, Google Cloud AI, or a local AI model) to perform the data analysis, image analysis, and audio analysis. This would likely require server-side code (Python, Node.js, etc.) to handle the AI interactions and return results to the HTML frontend.
+
+Handle File Uploads/URL Inputs: Implement proper input methods for CSV data, image URLs (or file uploads), and audio files/URLs, depending on the capabilities of your AI models and how you want to interact with them.
+
+Design a User Interface: Create a more visually appealing and user-friendly interface beyond just basic HTML elements. CSS styling would be essential.
+
+For now, the Markdown format provides a significantly improved, organized, and readable structure for your analysis process. You can use the prompts directly with AI models capable of text, image, and audio analysis. If you decide to build a web-based tool later, this structure provides a solid foundation."

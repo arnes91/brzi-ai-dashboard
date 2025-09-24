@@ -1,0 +1,17 @@
+{
+  "titles_bhs": ["{{TEMA}}: 5 koraka do rezultata", "Top 10 {{ALATI}} za brzu zaradu", "Kako ja koristim {{ALAT}} (Balkan tutorial)"],
+  "titles_eng": ["{{TOPIC}} in 5 steps", "Top 10 {{TOOLS}} for fast income", "How I use {{TOOL}} (Balkan tutorial)"],
+  "description_bhs": "U ovom videu pokazujem kako JA radim {{tema}}. Pogledaj timestamps i preuzmi besplatan PDF vodič.",
+  "tags_bhs": ["AI", "Balkan", "tutorial", "zarada", "Suno", "Riffusion", "NotebookLM", "YouTube"],
+  "tags_eng": ["AI", "tutorial", "Balkan", "money", "shorts", "YouTube", "automation", "prompt"],
+  "chapters": [{"t": "00:00", "label": "Hook"}, {"t": "00:20", "label": "Intro"}, {"t": "00:45", "label": "Step 5→1"}, {"t": "07:30", "label": "Recap"}, {"t": "08:00", "label": "CTA"}],
+  "thumbnail_prompts": [
+    "16:9, close-up face, bold 3-word overlay, high contrast, clean background, YouTube style",
+    "16:9, product + arrow + 3-word overlay, minimal, strong edge lighting",
+    "16:9, split before/after, thick outline subject, 3-word overlay"
+  ],
+  "community_image_prompts": [
+    "1:1, bold question, clean color block, minimal icon",
+    "1:1, teaser framegrab + arrow + 2-word overlay"
+  ]
+}

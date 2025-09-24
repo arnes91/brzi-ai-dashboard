@@ -1,0 +1,16 @@
+meta:
+  version: '1.0'
+  owner: Brzi Ai
+categories:
+  YouTube Scripts:
+  - name: Short How-to (60s)
+    prompt: 'Write a punchy 60s script in EN/BS for {topic}. Hook in 7 words. Use
+      3 steps. Add one quick win. CTA: subscribe @brziai.'
+  Agents:
+  - name: ReAct Planner
+    prompt: 'You are a planning agent. Given GOAL, produce a numbered plan with tools
+      to call. Use ReAct: Reason -> Act(tool,args) -> Observe. Stop when goal is met.'
+  Automation:
+  - name: Batch Rename Files
+    prompt: Generate python code to batch rename files in a folder using the pattern
+      {pattern}. Ask for confirmation before overwriting.

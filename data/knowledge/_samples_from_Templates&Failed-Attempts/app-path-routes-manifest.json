@@ -1,0 +1,14 @@
+{
+  "/api/chat/route": "/api/chat",
+  "/api/dbz-scan/route": "/api/dbz-scan",
+  "/_not-found/page": "/_not-found",
+  "/api/health-scan/route": "/api/health-scan",
+  "/api/hot-or-not/route": "/api/hot-or-not",
+  "/favicon.ico/route": "/favicon.ico",
+  "/admin/page": "/admin",
+  "/chatbot/page": "/chatbot",
+  "/dbz-scanner/page": "/dbz-scanner",
+  "/health-scan/page": "/health-scan",
+  "/hot-or-not/page": "/hot-or-not",
+  "/page": "/"
+}

@@ -1,0 +1,27 @@
+projects:
+- key: BAIDASH
+  name: BRZI Ai Dashboard
+  status: active
+  owner: Arnes
+  goals:
+  - Ship a unified dashboard with KB, prompts, RAG search, analytics
+  milestones:
+  - id: M1
+    name: MVP shipped
+    status: done
+  - id: M2
+    name: Docs ingest + FAISS index
+    status: todo
+  - id: M3
+    name: Agent automations
+    status: todo
+  tasks:
+  - id: T1
+    title: Wire i18n (EN/BS/DE)
+    status: done
+  - id: T2
+    title: Add prompt library
+    status: done
+  - id: T3
+    title: Ingest existing archives
+    status: todo

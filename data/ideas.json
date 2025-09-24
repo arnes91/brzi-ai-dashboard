@@ -1,0 +1,35 @@
+[
+  {
+    "id": "IA-0001",
+    "title": "Balkan-localized AI tutorial series (YouTube @brziai)",
+    "stage": "validate",
+    "tags": [
+      "content",
+      "EN/BS"
+    ],
+    "impact": 8,
+    "effort": 3
+  },
+  {
+    "id": "IA-0002",
+    "title": "Agentic Notion/Drive personal OS (MCP-ready)",
+    "stage": "prototype",
+    "tags": [
+      "product",
+      "automation"
+    ],
+    "impact": 9,
+    "effort": 5
+  },
+  {
+    "id": "IA-0003",
+    "title": "Glitch techno/Suno hooks pack for shorts",
+    "stage": "ideate",
+    "tags": [
+      "music",
+      "growth"
+    ],
+    "impact": 6,
+    "effort": 2
+  }
+]

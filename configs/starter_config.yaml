@@ -1,0 +1,32 @@
+owner:
+  name: Arnes (Brzi Arzi)
+  brands:
+  - Brzi Ai
+  - Brzi Arzi
+  - Brzi Balkan
+  languages:
+  - EN
+  - DE
+  - BS
+  principles:
+  - modular
+  - interconnected
+  - fail-safe
+  - automation
+  - privacy
+  - health-first
+  mission: Build modular, multilingual, Balkan‑localized AI systems that monetize
+    via scalable, automated workflows—while protecting time, health, and sovereignty.
+priority:
+- fast cashflow
+- low complexity
+- low cost
+- automation
+- family stability
+- privacy
+repos: []
+llm_provider: open
+paths:
+  knowledge_dir: /mnt/data/BRZI_AI_DASHBOARD/data/knowledge
+  indexes_dir: /mnt/data/BRZI_AI_DASHBOARD/data/indexes
+  reports_dir: /mnt/data/BRZI_AI_DASHBOARD/reports

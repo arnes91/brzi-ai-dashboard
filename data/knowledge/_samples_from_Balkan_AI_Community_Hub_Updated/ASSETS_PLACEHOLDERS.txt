@@ -1,0 +1,6 @@
+assets/prompts/best_prompts.json
+assets/templates/video_script_template.md
+assets/workflows/agent_publish_pipeline.yaml
+assets/media/loop_videos_source/
+assets/legal/risk_assessments.pdf
+assets/branding/thumbnail_styles.md
