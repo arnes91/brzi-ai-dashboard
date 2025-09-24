@@ -168,7 +168,7 @@ with col_left:
         activity_data = metrics_df
     
     # Activity chart
-    if not activity_data.empty:
+    if not activity_data.empty and len(activity_data) > 0: # Ensure data is not empty before plotting
         fig = px.line(
             activity_data, 
             x='date', 
