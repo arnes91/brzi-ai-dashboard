@@ -175,6 +175,9 @@ with col_left:
         })
     else:
         activity_data = metrics_df
+        # Ensure 'date' column is datetime for plotting
+        if 'date' in activity_data.columns:
+            activity_data['date'] = pd.to_datetime(activity_data['date'])
     
     # Activity chart
     if not activity_data.empty and len(activity_data) > 0: # Ensure data is not empty before plotting
