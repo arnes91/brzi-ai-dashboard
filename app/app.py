@@ -181,13 +181,19 @@ with col_left:
     
     # Activity chart
     if not activity_data.empty and len(activity_data) > 0: # Ensure data is not empty before plotting
-        fig = px.line(
-            activity_data, 
-            x='date', 
-            y=['ideas_created', 'tasks_completed', 'kb_searches'],
-            title="Daily Activity Overview",
-            labels={'value': 'Count', 'date': 'Date'}
-        )
+        required_cols = [\'ideas_created\', \'tasks_completed\', \'kb_searches\']
+        if all(col in activity_data.columns for col in required_cols):
+            fig = px.line(
+                activity_data, 
+                x=\'date\', 
+                y=required_cols,
+                title=\"Daily Activity Overview\",
+                labels={\'value\': \'Count\', \'date\': \'Date\'}
+            )
+        else:
+            st.warning("Missing required columns for activity chart. Please ensure 'ideas_created', 'tasks_completed', and 'kb_searches' are present in your metrics data.")
+            fig = go.Figure() # Create an empty figure to avoid error
+
         fig.update_layout(height=300)
         st.plotly_chart(fig, use_container_width=True)
 
