@@ -43,11 +43,26 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Base paths
-BASE = Path(__file__).resolve().parents[1]
-DATA = BASE / "data"
-KB = DATA / "knowledge"
-INDEXES = DATA / "indexes"
-REPORTS = BASE / "reports"
+# Determine the root of the repository dynamically
+ROOT = Path(__file__).resolve().parents[2] # Assuming app/pages/04_Knowledge_Base.py is 2 levels deep from root
+
+# Define key directories relative to ROOT
+SCRIPTS_DIR = ROOT / "scripts"
+KB_DIR = ROOT / "data" / "knowledge"
+INDEX_DIR = ROOT / "data" / "indexes"
+REPORTS_DIR = ROOT / "data" / "reports"
+
+# Ensure index and knowledge base directories exist
+KB_DIR.mkdir(parents=True, exist_ok=True)
+INDEX_DIR.mkdir(parents=True, exist_ok=True)
+REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+
+# For backward compatibility with existing code that might use these names
+BASE = Path(__file__).resolve().parent # This page's directory
+DATA = ROOT / "data"
+KB = KB_DIR
+INDEXES = INDEX_DIR
+REPORTS = REPORTS_DIR
 
 st.title("📚 Knowledge Base")
 st.caption("AI-powered semantic search with local FAISS indexing for your documents and knowledge")
@@ -283,11 +298,12 @@ with tab3:
         try:
             # Run the index building script
             result = subprocess.run(
-                [sys.executable, str(BASE / "scripts" / "build_vector_index.py")],
+                [sys.executable, str(SCRIPTS_DIR / "build_vector_index.py")],
                 capture_output=True,
                 text=True,
-                cwd=str(BASE)
+                cwd=str(ROOT) # Set CWD to the repository root
             )
+
             
             progress_bar.progress(90)
             status_text.text("Finalizing...")

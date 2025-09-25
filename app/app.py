@@ -54,6 +54,7 @@ st.markdown("""
 # Base paths
 BASE = Path(__file__).resolve().parent.parent
 DATA = BASE / "data"
+DATA.mkdir(parents=True, exist_ok=True) # Ensure data directory exists
 CONFIGS = BASE / "configs"
 REPORTS = BASE / "reports"
 I18N = BASE / "i18n"
@@ -103,7 +104,15 @@ metrics_fp = DATA / "metrics.csv"
 ideas = json.load(open(ideas_fp, "r", encoding="utf-8")) if ideas_fp.exists() else []
 projects = yaml.safe_load(open(projects_fp, "r", encoding="utf-8")) if projects_fp.exists() else {"projects":[]}
 prompts = yaml.safe_load(open(prompts_fp, "r", encoding="utf-8")) if prompts_fp.exists() else {"categories":{}}
-metrics_df = pd.read_csv(metrics_fp) if metrics_fp.exists() else pd.DataFrame()
+metrics_df = pd.DataFrame()
+if metrics_fp.exists():
+    try:
+        metrics_df = pd.read_csv(metrics_fp)
+    except pd.errors.EmptyDataError:
+        st.warning("Metrics CSV is empty. Initializing with empty data.")
+    except Exception as e:
+        st.error(f"Error loading metrics CSV: {e}. Initializing with empty data.")
+
 
 # Dashboard metrics
 col1, col2, col3, col4, col5 = st.columns(5)

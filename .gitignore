@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+build/
+dist/
+*.egg-info/
+.venv/
+env/
+virtualenv/
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/
+
+# Data and Configs (ensure these are NOT ignored if they need to be deployed)
+# Uncomment or modify these lines based on deployment strategy
+# data/
+# configs/
+
+# Specific files to ignore
+*.log
+*.tmp
+*.bak
+
+# Ignore specific data files that should not be committed but might be generated locally
+# data/metrics.csv
+# data/ideas.json
+# data/projects.yaml
+
+# Ignore indexes, as they are built dynamically
+data/indexes/
+
+# Keep .gitkeep files to ensure empty directories are tracked
+!.gitkeep
+
+# Ignore sensitive files like API keys if they are not handled via Streamlit secrets
+# app/configs/starter_config.yaml # This file should be committed as a starter config
+

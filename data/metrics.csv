@@ -1,5 +1,7 @@
-date,metric,value
-2025-09-01,yt_subs,1200
-2025-09-10,yt_subs,1250
-2025-09-17,yt_subs,1310
-2025-09-24,yt_subs,1375
+date,ideas_created,tasks_completed,kb_searches
+2025-09-01,2,3,5
+2025-09-02,3,4,6
+2025-09-03,1,2,4
+2025-09-04,4,5,7
+2025-09-05,2,3,5
+

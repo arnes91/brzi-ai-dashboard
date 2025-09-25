@@ -1,0 +1,16 @@
+profile:
+  name: BRZI AI User
+  timezone: UTC
+  language: EN
+  email: arnes.osmic@gmail.com
+preferences:
+  theme: light
+  notifications: true
+  auto_backup: true
+api_keys: {}
+features:
+  knowledge_base: true
+  ai_agents: true
+  automations: true
+  analytics: true
+

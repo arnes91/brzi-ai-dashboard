@@ -46,6 +46,7 @@ st.markdown("""
 # Base paths
 BASE = Path(__file__).resolve().parents[1]
 CONFIGS = BASE / "configs"
+CONFIGS.mkdir(parents=True, exist_ok=True) # Ensure configs directory exists
 I18N = BASE / "i18n"
 DATA = BASE / "data"
 
@@ -54,29 +55,39 @@ st.caption("Manage dashboard settings, API keys, preferences, and system configu
 
 # Load current configuration
 config_path = CONFIGS / "starter_config.yaml"
-if config_path.exists():
-    with open(config_path, 'r', encoding='utf-8') as f:
-        current_config = yaml.safe_load(f)
-else:
-    current_config = {
-        "profile": {
-            "name": "BRZI AI User",
-            "timezone": "UTC",
-            "language": "EN"
-        },
-        "preferences": {
-            "theme": "light",
-            "notifications": True,
-            "auto_backup": True
-        },
-        "api_keys": {},
-        "features": {
-            "knowledge_base": True,
-            "ai_agents": True,
-            "automations": True,
-            "analytics": True
+
+def load_config():
+    if config_path.exists():
+        with open(config_path, 'r', encoding='utf-8') as f:
+            return yaml.safe_load(f)
+    else:
+        # Default configuration
+        default_config = {
+            "profile": {
+                "name": "BRZI AI User",
+                "timezone": "UTC",
+                "language": "EN",
+                "email": "arnes.osmic@gmail.com" # Pre-fill with user's email
+            },
+            "preferences": {
+                "theme": "light",
+                "notifications": True,
+                "auto_backup": True
+            },
+            "api_keys": {},
+            "features": {
+                "knowledge_base": True,
+                "ai_agents": True,
+                "automations": True,
+                "analytics": True
+            }
         }
-    }
+        # Create the default config file
+        with open(config_path, 'w', encoding='utf-8') as f:
+            yaml.dump(default_config, f, default_flow_style=False, allow_unicode=True)
+        return default_config
+
+current_config = load_config()
 
 # Sidebar
 st.sidebar.header("⚙️ Settings Navigation")
@@ -147,6 +158,7 @@ if selected_section == "👤 Profile":
                 yaml.dump(current_config, f, default_flow_style=False, allow_unicode=True)
             
             st.success("✅ Profile settings saved successfully!")
+            current_config = load_config() # Reload config to reflect changes
 
 elif selected_section == "🎨 Appearance":
     st.subheader("🎨 Appearance & Theme")
@@ -210,6 +222,7 @@ elif selected_section == "🎨 Appearance":
                 yaml.dump(current_config, f, default_flow_style=False, allow_unicode=True)
             
             st.success("✅ Appearance settings saved successfully!")
+            current_config = load_config() # Reload config to reflect changes
 
 elif selected_section == "🔑 API Keys":
     st.subheader("🔑 API Keys & Integrations")
@@ -291,6 +304,7 @@ export ELEVENLABS_API_KEY="your-elevenlabs-key-here"
                 yaml.dump(current_config, f, default_flow_style=False, allow_unicode=True)
             
             st.success("✅ API keys saved successfully!")
+            current_config = load_config() # Reload config to reflect changes
 
 elif selected_section == "🌐 Language":
     st.subheader("🌐 Language & Localization")
@@ -369,6 +383,7 @@ elif selected_section == "🌐 Language":
             st.session_state["lang"] = selected_language
             
             st.success("✅ Language settings saved! Please refresh the page to see changes.")
+            current_config = load_config() # Reload config to reflect changes
 
 elif selected_section == "🔧 Features":
     st.subheader("🔧 Feature Configuration")
@@ -482,6 +497,7 @@ elif selected_section == "🔧 Features":
                 yaml.dump(current_config, f, default_flow_style=False, allow_unicode=True)
             
             st.success("✅ Feature settings saved successfully!")
+            current_config = load_config() # Reload config to reflect changes
 
 elif selected_section == "💾 Data Management":
     st.subheader("💾 Data Management")
@@ -649,6 +665,7 @@ elif selected_section == "🔒 Security":
                 yaml.dump(current_config, f, default_flow_style=False, allow_unicode=True)
             
             st.success("✅ Privacy settings saved successfully!")
+            current_config = load_config() # Reload config to reflect changes
 
 elif selected_section == "📊 System Info":
     st.subheader("📊 System Information")
